@@ -56,6 +56,7 @@
   <!-- navbar-light 配合亮底版面字為黑色, bg-light 是背景顏色,不需要則刪除,都可以改為 dark -->
   <!-- fixed-top 固定畫面為上方 -->
   <!-- header+(section#sec$>2{標題})*5+footer -->
+  
   <header class="navbar navbar-expand-md navbar-dark fixed-top">
 
     <!-- 限定顯示的區域容器, container-fluid 永遠百分百, 改為 xl -->
