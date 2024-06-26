@@ -31,7 +31,7 @@ public class UserController {
     public String registerUser(@ModelAttribute UserDto userDto, Model model) {
         String message = userService.createUser(userDto);
         model.addAttribute("message", message);
-        if (message.equals("註冊成功")) {
+        if (message.equals("會員註冊成功")) {
             return "redirect:/cname"; // 重新定向到登入頁面
         } else {
             return "account"; // 保留在注册页面
@@ -63,7 +63,6 @@ public class UserController {
         Optional<User> userOpt = userService.getUserByEmail(email);
         if (userOpt.isPresent() && userOpt.get().getPassword().equals(password)) {
         	session.setAttribute("loggedInUser", userOpt.get());
-        	model.addAttribute("loginSuccess", true); // 添加登入成功的提示框
             return "redirect:/cake"; // 登入成功，跳转到首页
         } else {
             model.addAttribute("message", "登入失敗，用戶名或密碼錯誤");

@@ -31,7 +31,7 @@
 	</properties>
 	<dependencies>
 		
-		<!-- 配置 jsp -->
+				<!-- 配置 jsp -->
 		<dependency>
 		    <groupId>org.apache.tomcat.embed</groupId>
 		    <artifactId>tomcat-embed-jasper</artifactId>
@@ -124,5 +124,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
+	
 </project>
