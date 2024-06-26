@@ -16,6 +16,10 @@
 
   <!-- 使用bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+  
+  <!-- 外部CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.0.5/dist/sweetalert2.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.0.5/dist/sweetalert2.min.js"></script>
 
   <!-- 共用的CSS -->
   <link rel="stylesheet" href="./css/cake.css">
@@ -219,6 +223,22 @@
               </a>
             </div>
 
+		<script th:inline="javascript">
+		    /*<![CDATA[*/
+		    var loginSuccess = /*[[${loginSuccess} ? ${loginSuccess} : false ]]*/ false;
+			
+		    // 根据后端传递的消息弹出 SweetAlert 提示框
+		    if (!loginSuccess) {
+		        Swal.fire({
+		            position: "top-end",
+		            icon: "success",
+		            title: "會員登入成功",
+		            showConfirmButton: false,
+		            timer: 1500
+		        });
+		    }
+		    /*]]>*/
+		</script>
 
 
 

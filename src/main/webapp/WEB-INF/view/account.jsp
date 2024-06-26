@@ -10,11 +10,6 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=3.0">
   <meta charset="UTF-8">
-  
-  <!-- 外部 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.0.5/dist/sweetalert2.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.0.5/dist/sweetalert2.min.js"></script>
-  
   <title>註冊新會員</title>
   <link rel="stylesheet" href="./css/login.css">
   <link href="images/CAKE2_logo.png" rel="icon" type="image/x-ico">
@@ -137,35 +132,7 @@
         已經有帳號？<a href="/cname">立即登入</a>
       </div>
     </div>
-  </div>
-  
-	<!-- JavaScript 提示框 -->
-	<!-- 引入 SweetAlert2 的 JavaScript 文件 -->
-  	<script th:inline="javascript">
-	    /*<![CDATA[*/
-	    var message = /*[[${message}]]*/ null;
-	
-	    // 根据后端传递的消息弹出 SweetAlert 提示框
-	    if (message !== null && message !== "") {
-	      if (message === "註冊成功") {
-	        Swal.fire({
-	          position: "top-end",
-	          icon: "success",
-	          title: "會員註冊成功",
-	          showConfirmButton: false,
-	          timer: 1500
-	        });
-	      } else {
-	        Swal.fire({
-	          icon: "error",
-	          title: "會員註冊失敗",
-	          text: "Something went wrong!",
-	          footer: '<a href="#">Why do I have this issue?</a>'
-	        });
-	      }
-	    }
-	    /*]]>*/
-  	</script>
+  </div> 	
   	
 </body>
 

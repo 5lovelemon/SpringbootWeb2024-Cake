@@ -13,7 +13,9 @@
     content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=3.0">
   <meta charset="UTF-8">
   <title>會員登入</title>
-  <link rel="stylesheet" href="./css/login.css">
+  
+  <!-- 專用CSS -->
+   <link rel="stylesheet" href="./css/login.css">
    <link href="images/CAKE2_logo.png" rel="icon" type="image/x-ico">
   <style>
     .form-group-checkbox {
